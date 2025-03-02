@@ -1,7 +1,9 @@
-import Image from "next/image";
+import Header from "./ui/header";
 
 export default function Home() {
   return (
-    <div>Hello, je suis la page d'accueil</div>
+    <div className="w-full pb-5 bg-[#2a6235]">
+      <Header />
+    </div>
   );
 }
