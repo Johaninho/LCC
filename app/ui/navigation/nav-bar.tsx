@@ -5,7 +5,7 @@ import NavLinks from "./nav-link";
 export default function NavBar () {
     return (
         
-        <div className="w-full navbar sticky top-0 flex inline-flex items-center justify-between px-5 bg-white rounded-b-2xl">
+        <div className="w-full navbar sticky top-0 flex inline-flex items-center justify-between px-5 bg-white rounded-b-2xl z-50">
             <div className="flex inline-flex items-center gap-5">
                 < LCCLogo />
                 < NavLinks />

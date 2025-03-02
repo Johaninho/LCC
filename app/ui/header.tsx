@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Header() {
     return (
        <>
-            <div className="flex justify-center">
+            <div className="flex justify-center pb-5 bg-[#2a6235]">
                 <div className="container">
                     <NavBar />
 
