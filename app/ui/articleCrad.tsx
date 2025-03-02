@@ -3,7 +3,7 @@ import { MdMemory } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ArticleCard() {
+export default function ArticleCard({ title, body }: { title: string; body: string }) {
     return (
         <div className="w-sm p-5 rounded-3xl hover:shadow-2xl hover:cursor-pointer bg-white overflow-hidden shadow-lg flex flex-col">
             <Link href="#"></Link>
@@ -33,12 +33,10 @@ export default function ArticleCard() {
                 <Link href="#"
                     className="font-bold text-xl text-[#f05c2c] inline-block inline-block mb-2"
                 >
-                    Formation à la fabrication de biopesticide et germoirs
+                    {title}
                 </Link>
 
-                <p className="text-gray-500">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
+                <p className="text-gray-500"> {body}</p>
             </div>
 
             {/* tag list */}

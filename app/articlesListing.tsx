@@ -1,15 +1,22 @@
 import ArticleCard from "./ui/articleCrad";
+import { GetArticles } from "./lib/data";
 
-export default function ArticlesListing() {
+export interface Article {
+    id: number;
+    title: string;
+    body: string;
+    userId: number;
+}
+
+
+export default async  function ArticlesListing() {
+    const data = await GetArticles()
     return (
         <>
             <div className="w-full grid grid-cols-3 gap-x-4 gap-y-6 mt-5">
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
+                {data.slice(0,6).map((post: Article) => (
+                    <ArticleCard title={post.title} body={post.body} />
+                ))}
             </div>
 
             <div className="w-full flex justify-between">
