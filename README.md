@@ -8,7 +8,7 @@ Ce projet a été développé avec Next.js 15 et déployé sur Vercel.
 ## 📌 Fonctionnalités Implémentées
 
 ✅ Page d'accueil avec présentation du projet
-✅ Design épuré et responsive
+✅ Design épuré
 ✅ Routing dynamique avec Next.js
 ✅ Déploiement réussi sur Vercel
 
