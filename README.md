@@ -20,11 +20,10 @@ Ce projet a été développé avec Next.js 15 et déployé sur Vercel.
 
 1️⃣ Cloner le projet
 
-bash
-Copier
-Modifier
+```bash
 git clone https://github.com/Johaninho/LCC.git
 cd LCC
+```
 2️⃣ Installer les dépendances
 
 ```bash
