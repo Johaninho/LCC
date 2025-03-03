@@ -51,7 +51,7 @@ export default function Header() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex fuga animi eius, magnam sint cupiditate.
                         </p>
 
-                        <button className="text-orange-500 text-3xl font-semibold rounded-full mt-5 px-5 py-3 bg-white hover:text-white hover:bg-[#f05c2c] hover:cursor-pointer">
+                        <button className="transition-transform transform hover:scale-105 text-orange-500 text-3xl font-semibold rounded-full mt-5 px-5 py-3 bg-white hover:text-white hover:bg-[#f05c2c] hover:cursor-pointer">
                             En savoir plus sur l'incubateur
                         </button>
                     </div>
@@ -61,7 +61,7 @@ export default function Header() {
                         <Image 
                             src="/image1.webp"
                             alt="image d'illustration"
-                            width={500}      
+                            width={550}      
                             height={300}  
                             className="rounded-xl shadow-lg object-cover"
                         />

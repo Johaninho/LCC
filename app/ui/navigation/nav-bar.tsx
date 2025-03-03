@@ -13,7 +13,7 @@ export default function NavBar () {
 
             <Link
                 href= "/Contact"
-                className="py-2 px-7 bg-black text-xl text-white rounded-full hover:bg-[#f05c2c]"
+                className="transition-transform transform hover:scale-105 py-2 px-7 bg-black text-xl text-white rounded-full hover:bg-[#f05c2c]"
             >
                 <p className="text-xl"> Contact </p>
             </Link>

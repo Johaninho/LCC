@@ -1,4 +1,5 @@
 import FilterTemplate from "./filterTemplate";
+import { IoMdTrash } from "react-icons/io";
 
 const localisationOptionsValues = ["Tous", "Cameroun", "Togo"]
 const AgirSurOptionsValues = ['Tous', 'Forêt et biodiversité', 'Condition de vie']
@@ -15,9 +16,10 @@ export default function Filter() {
 
             <div className="flex inline-flex items-center gap-4">
                 <button 
-                    className="text-gray-600 font-semibold text-lg p-2 hover:bg-gray-300 rounded-md hover:cursor-pointer"
+                    className="text-gray-600 flex inline-flex gap-3 hover:text-gray-700 items-center font-semibold text-lg p-2 hover:bg-gray-300 rounded-md hover:cursor-pointer"
                 >
-                    Effacer les filtres
+                    <IoMdTrash size={20}/>
+                    <p>Effacer les filtres</p>
                 </button>
             </div>
         </div>

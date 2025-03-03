@@ -3,10 +3,9 @@ import { MdMemory } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ArticleCard({ title, body }: { title: string; body: string }) {
+export default function ArticleCard({ title, body, id }: { title: string; body: string, id: number }) {
     return (
-        <div className="w-sm p-5 rounded-3xl hover:shadow-2xl hover:cursor-pointer bg-white overflow-hidden shadow-lg flex flex-col">
-            <Link href="#"></Link>
+        <div key={id} className="w-sm p-5 rounded-3xl hover:shadow-2xl hover:cursor-pointer bg-white overflow-hidden shadow-lg flex flex-col">
             {/* images */}
             <div className="relative">
                 <Image
@@ -65,7 +64,7 @@ export default function ArticleCard({ title, body }: { title: string; body: stri
             </div>
 
             {/* card footer*/}
-            <button className="text-left text-[#f05c2c] font-bold flex inline-flex items-center gap-3">
+            <button className="text-left text-[#f05c2c] hover:cursor-pointer hover:text-blue-400 font-bold flex inline-flex items-center gap-3">
                 <p className="text-xl">En savoir plus</p>
                 <IoArrowForwardOutline className="text-xl"/>
             </button>

@@ -1,6 +1,6 @@
 import LCCHighlight from "./Glassmorphism";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io5";
-import LCCLogo from "./ui/navigation/logo";
+import LCCLogo from "../navigation/logo";
 import NewsLetter from "./newletter";
 
 export default function Footer() {

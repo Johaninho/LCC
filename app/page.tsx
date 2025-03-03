@@ -1,8 +1,8 @@
-import ArticlesListing from "./articlesListing";
-import Footer from "./footer";
+import ArticlesListing from "./ui/footer/articlesListing";
+import Footer from "./ui/footer/footer";
 import CategoriesList from "./ui/categories et filtering/categoriesList";
 import Filter from "./ui/categories et filtering/filter";
-import Galerie from "./ui/galerie";
+import Galerie from "./ui/footer/galerie";
 import Header from "./ui/header";
 
 export default function Home() {
